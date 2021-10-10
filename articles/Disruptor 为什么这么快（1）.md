@@ -15,7 +15,7 @@ Disruptor 是交易公司 LMAX 开源的，目标是达到**低延迟高吞吐**
 
 Disruptor 使用的环形队列，是基于 new Object[] 实现的，为什么不用链表或图、树的数据结构来实现？一个主要的原因是**数组在内存中的布局是连续的**，相对于其他数据结构，数组的读写只需计算相对的元素的偏移量即可，并且该数组是可以**重复使用**的；下面是一个长度为 8 的环形队列抽象图与内存布局图（使用 jol-core 打印内存布局）：
 
-![layout](https://github.com/luckyMax-dev/blog/blob/master/images/disruptor/layout.png)
+![layout](https://github.com/luckyMax-dev/blog/blob/main/images/disruptor/layout.png)
 
 结合这两张图会发现，队列的头尾（64 bytes 或 128 bytes）有一部分是未使用的，这就是有效缓存行的填充原理，CPU 缓存行的大小一般是 64 bytes 或 128 bytes，为了兼容这两种缓存行，Disruptor 预留了足够的位置，主要是让其他变量与元素隔离开，达到有效缓存的目的，缓存行在框架中的 Sequence.java 中也有应用。下面根据源码看看，它是如何计算头尾填充以及元素定位的：
 

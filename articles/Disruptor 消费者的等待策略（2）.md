@@ -1,6 +1,6 @@
 在 Disruptor 3.4.4 中，实现了 8 种消费者等待策略，不同的等待策略对 cpu 的使用率有不同程度的影响，下面展示了有哪些实现类：
 
-![等待策略](https://github.com/luckyMax-dev/blog/blob/master/images/disruptor/WaitStrategy.png)
+![等待策略](https://github.com/luckyMax-dev/blog/blob/main/images/disruptor/WaitStrategy.png)
 
 下面依次看看它们的内部实现：
 
