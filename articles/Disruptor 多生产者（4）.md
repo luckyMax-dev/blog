@@ -96,7 +96,7 @@ public boolean isAvailable(long sequence) {
 
 再用一张图举个例子说明：
 
-![multi](https://github.com/luckyMax-dev/blog/blob/main/images/disruptor/multi.png)
+![multi](https://github.com/notayessir/blog/blob/main/images/disruptor/multi.png)
 
 多生产者引入一个 availableBuffer 数组（类似标记元素的属于第几代），解决了消费者消费未完成生产的元素的问题，这是个巧妙的设计。
 
