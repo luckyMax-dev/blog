@@ -6,6 +6,10 @@
 
 ------
 
+2022-01-17
+
+- Log4j2 自定义 Appender
+
 2021-10-10
 
 - [Disruptor 为什么这么快（1）](https://github.com/notayessir/blog/blob/main/articles/Disruptor%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E4%B9%88%E5%BF%AB%EF%BC%881%EF%BC%89.md)
