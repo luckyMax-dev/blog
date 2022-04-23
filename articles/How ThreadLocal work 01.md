@@ -2,7 +2,7 @@ ThreadLocal 的使用场景之一有，在执行 SQL 之前进行数据库选择
 
 ### ThreadLocal 的组成
 
-![struct](/Users/nuc/Desktop/struct.png)
+![struct](https://github.com/notayessir/blog/blob/main/images/threadlocal/struct.png)
 
 如图，ThreadLocal 由几个部分参与组成。每个线程的内部，都会持有一个 ThreadLocalMap，存储结构是一个有限长的 Entry 数组；Entry 继承自 WeakReference，持有 ThreadLocal 和 Value，平时使用中，对 ThreadLocal 的 set/get/remove 操作都是对 Entry 数组进行操作，下面先看看 Entry 的源码。
 

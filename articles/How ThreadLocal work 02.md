@@ -60,11 +60,11 @@ private int expungeStaleEntry(int staleSlot) {
 
 第一个逻辑比较好理解，即线性探测某个索引后续的 ThreadLocal 并释放 value，附图理解：
 
-![release](/Users/nuc/Desktop/release.png)
+![release](https://github.com/notayessir/blog/blob/main/images/threadlocal/release.png)
 
 第二个逻辑的作用是什么？根据源码的介绍，这段逻辑用来保证整个 Entry 数组的哈希有序，这样在使用 ThreadLocal 方法时，可以快速定位 Entry，附图理解：
 
-![swap](/Users/nuc/Desktop/swap.png)
+![swap](https://github.com/notayessir/blog/blob/main/images/threadlocal/swap.png)
 
 ### cleanSomeSlots 方法
 
@@ -97,7 +97,7 @@ private boolean cleanSomeSlots(int i, int n) {
 
 例如，当 n = 32，则需要在数组的 32，16，8，4，2，1 索引上进行检测，附图理解：
 
-![cleanSomeSlots](/Users/nuc/Desktop/cleanSomeSlots.png)
+![cleanSomeSlots](https://github.com/notayessir/blog/blob/main/images/threadlocal/cleanSomeSlots.png)
 
 ### replaceStaleEntry 方法
 
@@ -149,15 +149,15 @@ replaceStaleEntry 附带的清理逻辑有点复杂，附图理解：
 
 情况一，直接替换：
 
-![case1](/Users/nuc/Desktop/case1.png)
+![case1](https://github.com/notayessir/blog/blob/main/images/threadlocal/case1.png)
 
 情况二：1）在预期位置左边**找到**已释放的 ThreadLocal；2）预期位置右边**找到** key 所在位置；
 
-![case2](/Users/nuc/Desktop/case2.png)
+![case2](https://github.com/notayessir/blog/blob/main/images/threadlocal/case2.png)
 
 情况三：1）在预期位置左边**没找到**已释放的 ThreadLocal；2）预期位置右边**找到**已被释放的 ThreadLocal；
 
-![case3](/Users/nuc/Desktop/case3.png)
+![case3](https://github.com/notayessir/blog/blob/main/images/threadlocal/case3.png)
 
 ### rehash 方法
 
