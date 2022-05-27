@@ -7,7 +7,7 @@
 ------
 2022-05-27
 
-- [一个好的接口具备哪些特点](https://github.com/notayessir/blog/blob/main/articles/How%20ThreadLocal%20work%2001.md)
+- [一个好的接口具备哪些特点](https://github.com/notayessir/blog/blob/main/articles/%E4%B8%80%E4%B8%AA%E5%A5%BD%E6%8E%A5%E5%8F%A3%E5%85%B7%E5%A4%87%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9.md)
 
 
 2022-04-23
