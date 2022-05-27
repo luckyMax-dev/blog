@@ -5,6 +5,10 @@
 - 语雀：https://www.yuque.com/notayessir/dev
 
 ------
+2022-05-27
+
+- [一个好的接口具备哪些特点](https://github.com/notayessir/blog/blob/main/articles/How%20ThreadLocal%20work%2001.md)
+
 
 2022-04-23
 
