@@ -5,6 +5,10 @@
 - 语雀：https://www.yuque.com/notayessir/dev
 
 ------
+2022-07-31
+
+- 几则问题与排查思路 01
+
 2022-05-27
 
 - [一个好的接口具备哪些特点](https://github.com/notayessir/blog/blob/main/articles/%E4%B8%80%E4%B8%AA%E5%A5%BD%E6%8E%A5%E5%8F%A3%E5%85%B7%E5%A4%87%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9.md)
