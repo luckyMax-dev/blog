@@ -5,6 +5,10 @@
 - 语雀：https://www.yuque.com/notayessir/dev
 
 ------
+2022-09-15
+
+- （译）MapReduce: Simplified Data Processing on Large Clusters
+
 2022-07-31
 
 - [几则问题与排查思路 01](https://github.com/notayessir/blog/blob/main/articles/%E5%87%A0%E5%88%99%E9%97%AE%E9%A2%98%E4%B8%8E%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF%2001.md)
