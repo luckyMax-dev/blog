@@ -109,7 +109,7 @@ MapReduce 可能会有许多不同的实现，实现方式是否正确的取决�
 
 Map 的调用是分布式的，输入的数据被自动地切分为 M 组，这些数据分片可以被不同的机器并行处理。Reduce 的调用也是分布式的，具有中间状态的键值对按照 key 被切分成 R 个分区（例如使用公式 hash(key) mod R 进行分区），分区数以及分区函数由用户自定义。
 
-![Figure1](/Users/nuc/Desktop/Figure1.png)
+![Figure1](https://github.com/notayessir/blog/blob/main/images/map-reduce/Figure1.png)
 
 图 1 展示了我们实现的 MapReduce 处理流程图。当用户调用 MapReduce 函数时，会出现下面一系列的处理流程（方便说明，下面序号对应图 1 的标记的序号）：
 
@@ -265,7 +265,7 @@ MapReduce 库会自动维护一些计数器的值，例如处理过的键值对�
 
 grep 程序扫描 10^10 条大小为 100 byte 的记录，查找相对稀少的包含 3 个字符的模式（这种模式出现在 92,337 条记录中）。输入会被分为大约 64 MB 的块（M = 15000）,整个输出被放到一个文件（R = 1）。
 
-![Figure2](/Users/nuc/Desktop/Figure2.png)
+![Figure2](https://github.com/notayessir/blog/blob/main/images/map-reduce/Figure2.png)
 
 图 2 展示了计算的进度。Y 轴表示扫描到的输入数据速率，速率根据越多的机器被分配用于参与 MapReduce 计算逐渐上升，当 1764 台 worker 被分配任务时，峰值超过 30 GB/s。当 map 任务结束，速度开始下降直到 0 约花了 80 秒。整个计算从开始到结束大约耗时 150 秒，这包括大约一分钟的启动开销。这个开销花费在将程序传播到所有 worker 机器上，从 GFS 中打开 1000 个文件的延迟，以及获取局部优化所需的信息。
 
@@ -277,7 +277,7 @@ sort 程序对 10^10 条大小为 100 byte 的记录排序（数据总大小约�
 
 这个基准测试的分区函数内置了 key 分布的一些原理。在一般排序程序中，我们将添加一个预传递MapReduce 操作，该操作将收集 key 样本，并使用样本 key 的分布来计算最终排序传递的分割点。
 
-![Figure3](/Users/nuc/Desktop/Figure3.png)
+![Figure3](https://github.com/notayessir/blog/blob/main/images/map-reduce/Figure3.png)
 
 图 3(a) 展示了正常 sort 程序的执行进度。左上图显示了读取输入的速率。速率峰值达到 13 GB/s，然后在所有 map 任务结束之前的 200 秒相当快地消失。注意到输入速率相对 grep 来说较小，这是因为 sort 程序的 map 任务花费一半的时间和 I/O 带宽将具有中间状态的键值对写入到本地磁盘。grep 相应中间输出的大小可以忽略不计。
 
@@ -307,11 +307,11 @@ worker 的终结降低了输入速率，因为先前已完成的 map 工作消�
 - 新实验和产品网页属性的提取（从大型网页语料库中提取地理位置进行本地化搜索）
 - 大规模图计算
 
-![Figure4](/Users/nuc/Desktop/Figure4.png)
+![Figure4](https://github.com/notayessir/blog/blob/main/images/map-reduce/Figure4.png)
 
 图 4 显示了随着时间的推移，检查到我们的主要源代码管理系统中的独立 MapReduce 程序数量的显著增长变化，2003 年初到 2004 年 9 月底，数量从 0 增长到近 900。MapReduce 之所以如此成功，是因为它可以在半小时内编写一个简单的程序并在一千台机器上高效运行，大大加快了开发和原型制作周期。更进一步来说，它能够让没有分布式或并行系统经验的编程人员容易的使用大量资源。
 
-![Table1](/Users/nuc/Desktop/Table1.png)
+![Table1](https://github.com/notayessir/blog/blob/main/images/map-reduce/Table1.png)
 
  在每个 job 的结尾，MapReduce 库会打印每个 job 所使用的资源的统计。表 1 中，我们展示了 2004 年 8 月Google 运行的 MapReduce 作业子集的一些统计数据。
 
