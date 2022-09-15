@@ -7,7 +7,7 @@
 ------
 2022-09-15
 
-- （译）MapReduce: Simplified Data Processing on Large Clusters
+- [（译）MapReduce: Simplified Data Processing on Large Clusters](https://github.com/notayessir/blog/blob/main/articles/MapReduce%20Simplified%20Data%20Processing%20on%20Large%20Clusters.md)
 
 2022-07-31
 
