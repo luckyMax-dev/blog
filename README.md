@@ -7,7 +7,7 @@
 ------
 2022-10-24
 
-- OAuth2.0 的几种授权许可类型
+- [OAuth2.0 的几种授权许可类型](https://github.com/notayessir/blog/blob/main/articles/OAuth2.0%20%E7%9A%84%E5%87%A0%E7%A7%8D%E6%8E%88%E6%9D%83%E8%AE%B8%E5%8F%AF%E7%B1%BB%E5%9E%8B.md)
 
 2022-09-21
 
