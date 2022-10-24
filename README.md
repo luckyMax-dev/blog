@@ -5,6 +5,10 @@
 - 语雀：https://www.yuque.com/notayessir/dev
 
 ------
+2022-10-24
+
+- OAuth2.0 的几种授权许可类型
+
 2022-09-21
 
 - [（译）In Search of an Understandable Consensus Algorithm](https://github.com/notayessir/blog/blob/main/articles/MapReduce%20Simplified%20Data%20Processing%20on%20Large%20Clusters.md)
