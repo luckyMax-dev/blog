@@ -9,14 +9,6 @@
 
 - [OAuth2.0 的几种授权许可类型](https://github.com/notayessir/blog/blob/main/articles/OAuth2.0%20%E7%9A%84%E5%87%A0%E7%A7%8D%E6%8E%88%E6%9D%83%E8%AE%B8%E5%8F%AF%E7%B1%BB%E5%9E%8B.md)
 
-2022-09-21
-
-- [（译）In Search of an Understandable Consensus Algorithm](https://github.com/notayessir/blog/blob/main/articles/MapReduce%20Simplified%20Data%20Processing%20on%20Large%20Clusters.md)
-
-2022-09-15
-
-- [（译）MapReduce: Simplified Data Processing on Large Clusters](https://github.com/notayessir/blog/blob/main/articles/MapReduce%20Simplified%20Data%20Processing%20on%20Large%20Clusters.md)
-
 2022-07-31
 
 - [几则问题与排查思路 01](https://github.com/notayessir/blog/blob/main/articles/%E5%87%A0%E5%88%99%E9%97%AE%E9%A2%98%E4%B8%8E%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF%2001.md)
