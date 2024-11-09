@@ -1,3 +1,5 @@
+# Log4j2 自定义 Appender
+
 Log4j2 官方提供了多个开箱即用的 Appender 供开发者使用，如：
 
 - AsyncAppender，可以显著的提高文件日志输出性能；

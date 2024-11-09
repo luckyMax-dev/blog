@@ -1,3 +1,5 @@
+# Binlog 增量订阅 1：实现原理
+
 目前有两款流行的 MySQL binlog 订阅工具，分别是阿里巴巴的 Canal 以及 zendesk 的 Maxwell，Canal 的功能相较于 Maxwell 更为全面，社区也较为活跃；利用 binlog 订阅工具，我们可以读取 binlog 并结合业务做如下几个典型功能：
 
 1. 数据库实时备份；

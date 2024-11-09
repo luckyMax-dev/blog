@@ -1,4 +1,4 @@
-接着 How ThreadLocal work 01，这篇用于记录 ThreadLocal 是如何维护 Entry 数组中的无效 key 探测逻辑。
+# ThreadLocal 源码阅读 2
 
 先尝试回答上一篇文章中提出的问题，
 
