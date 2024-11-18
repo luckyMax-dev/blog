@@ -1,5 +1,9 @@
 ## 学习与总结
 
+2024-11-18
+
+[两则业务问题解决思路](https://github.com/notayessir/blog/blob/main/articles/2024-11-10-Slow-SQL.md)
+
 2022-10-24
 
 [OAuth2.0 的几种授权许可类型](https://github.com/notayessir/blog/blob/main/articles/2022-10-24-OAuth2.md)
